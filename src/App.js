@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+
+import { Outlet } from 'react-router-dom';
 import './App.css';
 
+import Header from './components/Header';
+import UserContext from './utils/UserContext';
+import { useContext, useEffect, useState } from 'react';
+import { Provider } from 'react-redux';
+import appStore from './utils/AppStore';
+
+
 function App() {
+     
+  const [userName,setUserName]=useState();
+  useEffect(()=>{
+   const data={name:"vamshi"}
+   setUserName(data.name);
+  },[]);
+
+
+
+
   return (
+    <Provider store={appStore}>
+    <UserContext.Provider value={{loggedInUser:userName,setUserName}}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         <Header/> 
+         <Outlet/>
+         
     </div>
+    </UserContext.Provider>
+    </Provider>
+    
   );
 }
 
