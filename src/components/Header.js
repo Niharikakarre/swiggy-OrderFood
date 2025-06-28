@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <div className='flex  '>
        <div>
-        <img className="w-44 m-2 h-40"src={LOGO_URL}alt="swiggy-logo"/>
+        <img className="w-44 m-2 h-40"src={LOGO_URL}alt="swiggyLogo"/>
        </div>
        <div className="  flex bg-gradient-to-b from-orange-400 w-full justify-between m-2 px-10 border-b-2 py-16">
        <Link to="/"className=' font-bold text-xl cursor-pointer mx-4 '>Home</Link> 

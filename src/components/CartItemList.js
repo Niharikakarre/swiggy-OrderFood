@@ -28,7 +28,7 @@ const CartItemList = ({items}) => {
                      </div>
                      <div className='w-3/12'>
                       <button className=' absolute p-2 mb-1 rounded-lg bg-red-600 text-white' onClick={()=>RemoveFromCart(item.card.info.id)}>Remove</button>
-                      <img alt="cart-img"className=" rounded-lg"src={RES_IMG_URL+item.card.info.imageId}/>
+                      <img alt="cartImage"className=" rounded-lg"src={RES_IMG_URL+item.card.info.imageId}/>
                     
                       </div>               
                     </div>))}

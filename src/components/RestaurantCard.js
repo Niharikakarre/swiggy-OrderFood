@@ -11,7 +11,7 @@ const RestaurantCard = (props) => {
   return (
     <div className=' m-2 ' >
       <div className='bg-gray-300 w-64 p-4 m-2 rounded-lg text-center '>
-        <img className="rounded-lg w-60 h-60  "src={RES_IMG_URL+cloudinaryImageId}alt="res-img"/>
+        <img className="rounded-lg w-60 h-60  "src={RES_IMG_URL+cloudinaryImageId}alt="resImg"/>
         <h2 className='p-1 font-bold text-lg'>{name}</h2>
         <h2 className='p-1 font-medium  '>{avgRating} Star </h2>
         <h2 className='p-1 font-medium  '>{costForTwo}</h2>
