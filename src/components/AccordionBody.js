@@ -28,7 +28,7 @@ export const AccordionBody = ({items}) => {
                  </div>
                  <div className='w-3/12'>
                  <button onClick={()=>handleAddItemToCart(item)} className='bg-teal-800 text-white p-2 m-auto rounded-lg absolute'>Add+</button>
-                  <img className=" rounded-lg"src={RES_IMG_URL+item.card.info.imageId}/>
+                  <img alt="res-img"className=" rounded-lg"src={RES_IMG_URL+item.card.info.imageId}/>
                 
                   </div>               
                 </div>))}

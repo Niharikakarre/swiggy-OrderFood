@@ -1,6 +1,6 @@
-import React, { useContext, useState } from 'react'
+import React, {  useState } from 'react'
 import AccordionBody from './AccordionBody';
-import { click } from '@testing-library/user-event/dist/click';
+
 
 
 const RestaurantCaterogy = ({data,showItems,setShowIndex}) => {

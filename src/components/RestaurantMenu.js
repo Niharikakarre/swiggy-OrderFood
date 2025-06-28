@@ -6,15 +6,15 @@ import useRestaurantMenu from '../utils/useRestaurantMenu';
 import RestaurantCaterogy from './RestaurantCaterogy';
 import { useState } from 'react';
 import { RES_IMG_URL } from '../utils/constants';
-import { useDispatch } from 'react-redux';
-import { addItem } from '../utils/cartSlice';
+
+
 
 const RestaurantMenu = () => {
     
     const {resId}=useParams();
     const resInfo=useRestaurantMenu(resId);
     const [showIndex,setShowIndex]=useState(null);
-    const dispatch=useDispatch();
+   
   
     if(resInfo===null)return<Shimmer/>;
    
@@ -24,9 +24,7 @@ const RestaurantMenu = () => {
     // console.log(resInfo?.cards[2]?.card?.card?.info);
     const categories=resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter((c)=>(c?.card?.card?.["@type"]==="type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"))
    
-    const handleAddToCart=(props)=>{
-       console.log(props);
-    }
+  
      
     
  
@@ -39,7 +37,7 @@ const RestaurantMenu = () => {
         <h1 className='font-bold text-xl my-1 '>{name}</h1>
         <div className='flex'>
          
-          <img className='w-40 rounded-lg p-2 h-50' src={RES_IMG_URL+cloudinaryImageId}aklt="img"/> 
+          <img  className='w-40 rounded-lg p-2 h-50' src={RES_IMG_URL+cloudinaryImageId} alt="imgess"/> 
           <div className='text-center pl-5'>
             <p className='p-1 font-medium '>Area Name: {areaName}</p>
            <p className='p-1 font-medium '>Place: {city}</p>

@@ -1,16 +1,16 @@
 
 import RestaurantCard,{WithVegLabel} from './RestaurantCard';
-import { useState ,useEffect, useContext} from 'react';
+import { useState ,useEffect} from 'react';
 import Shimmer from './Shimmer';
-import { Link, useRouteError } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import useOnlineStatus from '../utils/useOnlineStatus';
-import UserContext from '../utils/UserContext';
+
 const Body = () => {
     const [searchText,setSearchText]=useState("");
      const [resList,setResList]=useState([]);
      const [filterItems,SetFilterItems]=useState([]);
      const VegRestaurants=WithVegLabel(RestaurantCard);
-     const {setUserName,loggedInUser}=useContext(UserContext);
+  
      
     
 const fecthData= async()=>{

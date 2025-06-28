@@ -18,7 +18,7 @@ const Payment= () => {
     }
     setAmount(tempSum);
  }
- useEffect(()=>{sum()},[]);
+ useEffect(()=>{sum()});
   
   return (
      

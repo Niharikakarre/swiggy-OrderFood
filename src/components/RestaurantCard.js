@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { RES_IMG_URL } from '../utils/constants'
-import UserContext from '../utils/UserContext';
+
 
 const RestaurantCard = (props) => {
   const {resData}=props;
-  const {loggedInUser}=useContext(UserContext);
+
   const {name,avgRating,costForTwo,cloudinaryImageId,cuisines}=resData.info;
  
 

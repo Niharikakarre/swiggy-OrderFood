@@ -10,7 +10,7 @@ const useRestaurantMenu=(resId)=>{
         }
     useEffect(()=>{
         fetchMenu();
-     },[]);
+     });
     
    
     return resInfo;
