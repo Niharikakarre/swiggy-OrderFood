@@ -4,7 +4,7 @@ import './App.css';
 
 import Header from './components/Header';
 import UserContext from './utils/UserContext';
-import { useContext, useEffect, useState } from 'react';
+import {useEffect, useState } from 'react';
 import { Provider } from 'react-redux';
 import appStore from './utils/AppStore';
 
