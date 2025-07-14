@@ -5,14 +5,11 @@ import { addItem } from '../utils/cartSlice';
 
 export const AccordionBody = ({items}) => {
   const dispatch=useDispatch();
-  const [isAdded,setIsAdded]=useState(false);
+  
   const handleAddItemToCart=(item)=>{
-    // dispatch an action
+    
     dispatch(addItem(item))
-    setIsAdded(true);
-    setTimeout(()=>{
-      setIsAdded(false);
-    },3000);
+   
     
     
     
