@@ -13,7 +13,7 @@ class UserClass extends React.Component{
  
     }
     async componentDidMount(){
-       const data=await fetch(" https://api.github.com/users/Vamshi220325");
+       const data=await fetch(" https://api.github.com/users/Niharikakarre");
        const json=await data.json();
       
        this.setState({
@@ -36,7 +36,7 @@ class UserClass extends React.Component{
             <h3 className="text-lg">{login}</h3>
             <h3 className=" text-lg">Phone Num:xxxxxxxxx</h3>
             <h2 className=" text-lg">Gmail:xxxxxxxxxxxxx</h2>
-            <h3 className=" text-lg">NIT Warangal</h3>
+            <h3 className=" text-lg">KITS Warangal</h3>
        </div>
        </div>)
    }
