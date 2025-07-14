@@ -32,7 +32,7 @@ const RestaurantMenu = () => {
   return (
     
     <div className="menu text-center ">
-       
+         
         <div className='w-3/12 bg-gray-200 mx-auto rounded-lg  ' >
         <h1 className='font-bold text-xl my-1 '>{name}</h1>
         <div className='flex'>
