@@ -30,10 +30,10 @@ const Cart = () => {
 
 
     </div>
-  )q
+  )
 
 
-  
+
 }
 
 export default Cart
