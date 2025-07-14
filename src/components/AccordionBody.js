@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { RES_IMG_URL } from '../utils/constants';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../utils/cartSlice';
